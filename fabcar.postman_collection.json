@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "ace406e8-789f-4347-9052-339ad8139e9e",
+		"name": "fabcar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:4000/car",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"color\": \"yello\",\n    \"docType\": \"car\",\n    \"make\": \"Hyundai\",\n    \"model\": \"Tucson\",\n    \"owner\": \"Aman Jain\"\n}"
+				},
+				"url": {
+					"raw": "localhost:4000/car",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"car"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4000/car",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":\"CAR11\",\n    \"colour\": \"Brown\",\n    \"make\": \"Hyundai\",\n    \"model\": \"Tucson\",\n    \"owner\": \"Aman Jain\"\n}"
+				},
+				"url": {
+					"raw": "localhost:4000/car",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"car"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
